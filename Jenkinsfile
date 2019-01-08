@@ -1,8 +1,8 @@
 node {
-    stage('WindowsServerCore') {
+    stage('ubuntu') {
 // This step should not normally be used in your script. Consult the inline help for details.
-withDockerContainer('windows server core:ltsc2019') {
-    sh 'winver'
+withDockerContainer('ubuntu:xenial') {
+    sh 'uname -a'
 }
     }
 }
