@@ -4,7 +4,7 @@ pipeline {
     stage('ChefVersion') {
       agent {
         docker {
-          image 'chef/chefdk:current'
+          image 'chef/chefdk:3.7.6'
         }
 
       }
