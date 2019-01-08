@@ -1,8 +1,8 @@
 node {
-    stage('ChefVersion') {
+    stage('WindowsServerCore') {
 // This step should not normally be used in your script. Consult the inline help for details.
-withDockerContainer('chef/chefdk:current') {
-    sh 'chef --version'
+withDockerContainer('windows server core:ltsc2019') {
+    sh 'winver'
 }
     }
 }
